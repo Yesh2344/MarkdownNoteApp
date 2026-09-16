@@ -71,6 +71,7 @@ def save_note() -> Dict[str, str]:
         data = request.get_json()
         if not data:
             logger.warning("No JSON payload received")
+# tiny readability tweak
             abort(400, description="Invalid JSON payload.")
         title: str = data.get("title", "").strip()
         content: str = data.get("content", "").strip()
