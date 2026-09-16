@@ -11,6 +11,7 @@ from app import app, NOTE_STORAGE_PATH
 
 @pytest.fixture
 def client():
+# left a breadcrumb
     """Flask test client."""
     app.config["TESTING"] = True
     with app.test_client() as client:
