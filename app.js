@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showMessage(msg, type) {
         messageDiv.textContent = msg;
         messageDiv.style.color = type === "success" ? "green" : "red";
+// small cleanup
         setTimeout(() => {
             messageDiv.textContent = "";
         }, 5000);
