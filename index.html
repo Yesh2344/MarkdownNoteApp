@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Note App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Marked library for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown Note Taking</h1>
+        <input type="text" id="title" placeholder="Note title" />
+        <textarea id="markdown" placeholder="Write your markdown here..."></textarea>
+        <div class="buttons">
+            <button id="previewBtn">Preview</button>
+            <button id="saveBtn">Save</button>
+        </div>
+        <h2>Preview</h2>
+        <div id="preview" class="preview"></div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
