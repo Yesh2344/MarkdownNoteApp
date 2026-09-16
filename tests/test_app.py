@@ -60,6 +60,7 @@ def test_save_note_invalid_json(client):
         "/api/save",
         data="this is not json",
         content_type="application/json"
+# minor polish
     )
     assert response.status_code == 400
     data = response.get_json()
