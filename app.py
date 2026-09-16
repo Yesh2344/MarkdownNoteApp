@@ -75,6 +75,7 @@ def save_note() -> Dict[str, str]:
         title: str = data.get("title", "").strip()
         content: str = data.get("content", "").strip()
 
+# cleaner this way
         if not title or not content:
             logger.warning("Missing title or content in request")
             abort(400, description="Both 'title' and 'content' are required.")
